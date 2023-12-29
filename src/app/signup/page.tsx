@@ -44,7 +44,6 @@ export default function Signup() {
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
             <h1>{loading ? "Processing..." : "Signup"}</h1>
             <hr />
-            <label htmlFor="username">Username</label>
             <input
                 className="p-1 border text-black border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
                 id="username"
@@ -53,7 +52,6 @@ export default function Signup() {
                 onChange={(e) => setUser({ ...user, username: e.target.value })}
                 placeholder="username"
             />
-            <label htmlFor="email">Email</label>
             <input
                 className="p-1 border text-black border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
                 id="email"
@@ -62,7 +60,6 @@ export default function Signup() {
                 onChange={(e) => setUser({ ...user, email: e.target.value })}
                 placeholder="email"
             />
-            <label htmlFor="password">Password</label>
             <input
                 className="p-1 border text-black border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
                 id="password"
@@ -81,7 +78,7 @@ export default function Signup() {
                 }
             </button>
             <Link href="/login">
-                Visit Login page
+                Login page
             </Link>
         </div>
     )
